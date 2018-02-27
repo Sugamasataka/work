@@ -1,0 +1,328 @@
+#Box{
+    width: 90%;
+    margin:50px auto;
+}
+
+.tab{
+    overflow:hidden;
+    width: 100%;
+    z-index: 1;
+}
+.tab li{
+    list-style: none;
+    color:#333;
+    padding:10px 25px;
+    float:left;
+    z-index: 1;
+    display: inline-block;
+    vertical-align: bottom;
+    bottom: -2px;
+    cursor: pointer;
+}
+
+.tab li.select{
+    color: #14579B;
+    z-index: 2;
+    border-bottom: solid 3px #14579B ;
+    bottom: -2px;
+}
+
+.hide {
+    display:none;
+}
+
+#templateBox{
+    background: url("../images/bg.png");
+    position: relative;
+    overflow-y: scroll;
+    width:100%;
+    height:90%;
+    color: #1D1210;
+}
+
+#Msg{
+    text-align: center;
+    line-height: 1.5;
+    margin:200px;
+}
+.btn{
+    font-size: 16px;
+    background-image: linear-gradient(-180deg, #1FDCFF 6%, #037D94 54%, #1FDCFF 100%);
+    border: 1px solid #979797;
+    color: #ffffff;
+    width:100px;
+    height:30px;
+    margin:10px auto;
+    line-height: 32px;
+    cursor: pointer;
+}
+
+
+/*--------------------------------テンプレート内容------------------------------*/
+
+.boxTitle{
+    margin:10px 0;
+}
+.boxCont{
+    margin:10px 0;
+    font-size:20px;
+}
+.RecrCont{
+    width:100%;
+    height:300px;
+    overflow-y: scroll;
+    border-radius: 5px;
+    border: solid 1px;
+    line-height: 1.5;
+}
+#supportList{
+    margin: 10px 5%;
+    width:90%;
+    overflow: hidden;
+    clear: left;
+}
+.supportTitle{
+    font-size: 20px;
+    margin:10px 0;
+}
+#supportList dl{
+    width:30%;
+    margin:10px 1.5%;
+    float: left;
+    text-align: center;
+}
+#supportList dt{
+    font-size: 16px;
+    margin:10px 0;
+}
+#supportList dd{
+    font-size: 18px;
+}
+.RecrDate{
+    width:250px;
+    float: left;
+    margin:20px 5%;
+}
+#recrDate p{
+    margin:5px 0;
+}
+.btnBox{
+    float: right;
+    margin-top:20px;
+    margin-right: 5%;
+}
+#editBtnFriend,#editBtnMember{
+    font-size: 16px;
+    background-image: linear-gradient(-180deg, #1FDCFF 6%, #037D94 54%, #1FDCFF 100%);
+    border: 1px solid #979797;
+    color: #ffffff;
+    width: 100px;
+    height: 30px;
+    margin: 10px auto;
+    line-height: 32px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.email{
+    display: none;
+}
+/*--------------------------------入力フォーム(フレンド)------------------------------*/
+
+#friendForm{
+    display: none;
+}
+
+#friendForm h3{
+    text-align: center;
+    font-size: 32px;
+    margin:20px 0;
+}
+
+
+.formName{
+    margin:10px 0;
+}
+.box{
+    width:40%;
+    float: left;
+    margin:20px 5%;
+}
+.box input{
+    width: 100%;
+    font-size: 20px;
+    border-radius: 5px;
+    margin-top:5px;
+    border: 1px solid #999;
+}
+
+.contBox{
+    width:90%;
+    margin:20px 5%;
+}
+
+.FRecrCont{
+    resize: none;
+    font-size: 18px;
+    width:100%;
+    height:300px;
+    border-radius: 5px;
+    border: 1px solid #999;
+
+}
+
+.summonSelectBox{
+    width:90%;
+    margin:auto;
+    overflow: hidden;
+}
+
+.summonSelect{
+    width:30%;
+    margin:10px 1%;
+    float:left;
+}
+
+.summon{
+    width:100%;
+    -webkit-appearance: none;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top:5px;
+    padding:5px;
+    display: inline-block;
+    background: url(../images/arrow01.png) right 50% no-repeat, linear-gradient(to bottom, #fff 0%,#efebe1 100%);
+    background-size: 20px, 100%;
+}
+
+.state{
+    width:30%;
+    -webkit-appearance: none;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top:5px;
+    padding:5px;
+    display: inline-block;
+    background: url(../images/arrow01.png) right 50% no-repeat, linear-gradient(to bottom, #fff 0%,#efebe1 100%);
+    background-size: 20px, 100%;
+}
+#friendForm input[type="submit"]{
+    float: left;
+    width:20%;
+    font-size: 16px;
+    background-image: linear-gradient(-180deg, #1FDCFF 6%, #037D94 54%, #1FDCFF 100%);
+    border: 1px solid #979797;
+    color: #ffffff;
+    margin:20px 13%;
+}
+
+#cancelFT{
+    float: left;
+    width:20%;
+    height: 27px;
+    line-height: 29px;
+    text-align: center;
+    font-size: 16px;
+    background-image: linear-gradient(-180deg, #1FDCFF 6%, #037D94 54%, #1FDCFF 100%);
+    border: 1px solid #979797;
+    color: #ffffff;
+    margin:20px 13%;
+    cursor: pointer;
+}
+
+#cancelMT{
+    float: left;
+    width:20%;
+    height: 27px;
+    line-height: 29px;
+    text-align: center;
+    font-size: 16px;
+    background: rgba(224,24,22,0.80);
+    border: 1px solid #979797;
+    color: #ffffff;
+    margin:20px 13%;
+    cursor: pointer;
+}
+/*--------------------------------入力フォーム(団員)------------------------------*/
+#MemberForm{
+    display: none;
+}
+
+#MemberForm h3{
+    text-align: center;
+    font-size: 32px;
+    margin:20px 0;
+}
+
+.RecrCont{
+    resize: none;
+    height:300px;
+    font-size: 18px;
+    width:100%;
+    border-radius: 5px;
+    border: 1px solid #999;
+
+}
+.tagList{
+    width:90%;
+    margin:20px 5%;
+    overflow: hidden;
+}
+.tagName{
+    display:none;
+}
+.tags{
+    font-size: 14px;
+    padding: 10px;
+    background-color: #1D1210;
+    float: left;
+    color: #ffffff;
+    line-height: 1.2;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.box select{
+    -webkit-appearance: none;
+    width:100%;
+    font-size: 20px;
+    border-radius: 5px;
+    margin-top:5px;
+    padding:5px;
+    display: inline-block;
+    background: url(../images/arrow01.png) right 50% no-repeat, linear-gradient(to bottom, #fff 0%,#efebe1 100%);
+    background-size: 20px, 100%;
+}
+
+#assaultTime{
+    float: left;
+    width:40%;
+    margin:10px 5%;
+}
+
+.at{
+    float: left;
+    width:40%;
+    margin:10px 5%;
+}
+
+.atTime{
+    -webkit-appearance: none;
+    width:100%;
+    font-size: 20px;
+    border-radius: 5px;
+    margin-top:5px;
+    padding:5px;
+    display: inline-block;
+    background: url(../images/arrow01.png) right 50% no-repeat, linear-gradient(to bottom, #fff 0%,#efebe1 100%);
+    background-size: 20px, 100%;
+}
+#MemberForm input[type="submit"]{
+    float: left;
+    width:20%;
+    font-size: 16px;
+    background-image: linear-gradient(-180deg, #1FDCFF 6%, #037D94 54%, #1FDCFF 100%);
+    border: 1px solid #979797;
+    color: #ffffff;
+    margin:20px 13%;
+}

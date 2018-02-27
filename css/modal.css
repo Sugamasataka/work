@@ -1,0 +1,138 @@
+
+
+/* モーダル 背景エリア */
+#modal-bg {
+    display: none;
+    width:100%;
+    height:100%;
+    background-color: rgba(0,0,0,0.5);
+    position:fixed;
+    top:0;
+    left:0;
+    z-index: 1;
+}
+
+/*モーダル 詳細画面*/
+#modal-detail{
+    display: none;
+    width:90%;
+    height:90%;
+    margin:0;
+    padding:0;
+    background-color: #f1ebdb;
+    color: #666666;
+    position:fixed;
+    z-index: 2;
+}
+#detailContents{
+    width: 90%;
+    height:90%;
+    margin:0;
+    padding:3%;
+    overflow: hidden;
+    line-height: 1.5;
+    position: relative;
+}
+#detailTeamName{
+    width:100%;
+    font-size: 32px;
+    float:left;
+}
+
+#detailLeft{
+    width:50%;
+    height: 100%;
+    float: left;
+}
+#detailRight{
+    width:40%;
+    height: 80%;
+    float: left;
+    margin:0 5%;
+}
+#detailCont{
+    width:100%;
+    height:90%;
+    float: left;
+    margin:10px;
+}
+.resultCont{
+    width:100%;
+    height:90%;
+    overflow-y: scroll;
+    padding:1%;
+    border: solid 1px #1D1210;
+
+}
+.resultCont::-webkit-scrollbar{
+    display: none;
+}
+#detailTags{
+    width:100%;
+    height:30%;
+    margin:20px 0;
+    float:left;
+    overflow: hidden;
+}
+.detailTag{
+    float:left;
+    padding:5px;
+    background-color: #1D1210;
+    color: #fff;
+    margin:5px;
+    border-radius: 5px;
+}
+#tagBox{
+    width:100%;
+    height:100%;
+}
+
+#detailAt{
+    width:100%;
+    height:20%;
+    margin:10px 0;
+    overflow: hidden;
+}
+.resultAt{
+    width:40%;
+    margin:10px 5%;
+    float: left;
+}
+
+#detailContributor{
+    position: absolute;
+    top:5%;
+    right:1%;
+}
+
+
+#detailGameID{
+    width:100%;
+    margin:20px 0;
+    overflow: hidden;
+}
+
+.resultGameID{
+    float:left;
+    width:60%;
+    margin:10px 5%
+}
+
+#detailDate{
+    position: absolute;
+    bottom: 2%;
+    left:3%;
+}
+.deleteBtn{
+    cursor: pointer;
+    position: absolute;
+    bottom: 3%;
+    right:1%;
+    /* Rectangle: */
+    background: rgba(224,24,22,0.80);
+    color: #ffffff;
+    padding:10px;
+    font-size: 16px;
+}
+
+

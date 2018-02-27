@@ -1,0 +1,439 @@
+body{
+    font-family: BanglaSangamMN-Bold;
+    box-sizing: border-box;
+    background:url("../images/home_main_visual_landscape.jpg") no-repeat;
+    background-size: 100% auto;
+    background-attachment: fixed;
+}
+*::-webkit-scrollbar{
+ display: none;
+}
+a{
+    text-decoration: none;
+}
+main{
+    clear: left;
+    z-index: 0;
+}
+
+#contents{
+    background: rgba(255,255,255, 0.7);
+}
+
+main{
+    width:100%;
+    overflow: hidden;
+}
+
+h2 {
+    text-align: center;
+    margin:30px;
+    font-size: 40px;
+}
+
+/*------------------ 募集フォーム&検索 start ------------------------*/
+#RecrNav{
+    width:100%;
+    background-color: #ffff99;
+    margin: 50px auto;
+}
+#RecrNav p{
+    float: left;
+}
+
+.recrButton{
+    width:25%;
+    padding:10px 0;
+    background-image: linear-gradient(-180deg, #1FDCFF 6%, #037D94 54%, #1FDCFF 100%);
+    border: 1px solid #979797;
+    color: #ffffff;
+    margin:20px 12.3%;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+.recrButton:hover {
+    opacity: 0.8;
+}
+
+.recrButton:active{
+    transform: translate3d(0, 3px, 0);
+}
+
+/*------------------ 募集フォーム&検索 end ------------------------*/
+
+/*------------------ 募集リスト start ------------------------*/
+
+#RecrList{
+    clear: left;
+    margin:20px;
+}
+
+/*------------------ 募集リスト end ------------------------*/
+
+/*------------------ カードデザイン start ------------------------*/
+.recrCard{
+    width:30%;
+    height:400px;
+    float: left;
+    margin:20px 1.5%;
+    background: url("../images/bg.png");
+    border: solid 1px #81756F;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.MRid{
+    display: none;
+}
+
+.teamName{
+    background-image: linear-gradient(-180deg, #1FDCFF 6%, #037D94 54%, #1FDCFF 100%);
+    border: 1px solid #979797;
+    color:#ffffff;
+    font-size: 20px;
+    display: block;
+    margin:3%;
+    padding: 3%;
+    height:25px;
+    line-height: 30px;
+}
+
+.tagList{
+    clear: left;
+    width:90%;
+    height:25%;
+    margin: 20px auto;
+    overflow: hidden;
+    padding-top: 1%;
+}
+
+.tag{
+    float: left;
+}
+
+.commentBox{
+    clear: left;
+    width:90%;
+    height:34%;
+    margin:10px auto;
+    padding-top: 1%;
+    overflow: hidden;
+}
+
+.commentile{
+    font-size: 18px;
+    margin:5px 0;
+}
+.comment{
+    width:100%;
+    font-size: 14px;
+}
+
+.RecrDate{
+    position: absolute;
+    left:3%;
+    bottom:3%;
+    font-size: 12px;
+}
+.RecrDate p{
+    margin:5px 0;
+}
+
+.detail{
+    float:left;
+    padding:10px;
+    background-image: linear-gradient(-180deg, #1FDCFF 6%, #037D94 54%, #1FDCFF 100%);
+    border: 1px solid #979797;
+    color:#ffffff;
+    position: absolute;
+    right:3%;
+    bottom:3%;
+    cursor: pointer;
+}
+
+.detail:hover {
+    opacity: 0.8;
+}
+
+.detail:active{
+    transform: translate3d(0, 3px, 0);
+}
+/*------------------ カードデザイン end ------------------------*/
+
+/*------------------ 右のコンテンツ end ------------------------*/
+
+/*------------------ 募集フォーム(モーダル) start ------------------------*/
+#form{
+    display: none;
+    width:80%;
+    height:90%;
+    margin:0;
+    padding:0;
+    background-color: #f1ebdb;
+    color: #666666;
+    position:fixed;
+    z-index: 2;
+}
+
+#form h3{
+    text-align: center;
+    font-size: 32px;
+    margin:20px 0;
+}
+
+.formName{
+    margin:10px 0;
+}
+
+.box{
+    width:40%;
+    float: left;
+    margin:20px 5%;
+}
+.box input{
+    width: 100%;
+    font-size: 20px;
+    border-radius: 5px;
+    margin-top:5px;
+    border: 1px solid #999;
+}
+
+.contBox{
+    width:90%;
+    margin:10px 5%;
+}
+
+.RecrCont{
+    resize: none;
+    width:100%;
+    border-radius: 5px;
+    border: 1px solid #999;
+
+}
+.tags{
+    width:90%;
+    float: left;
+    margin:20px 5%;
+}
+
+.box select{
+    -webkit-appearance: none;
+    width:100%;
+    font-size: 20px;
+    border-radius: 5px;
+    margin-top:5px;
+    padding:5px;
+    display: inline-block;
+    background: url(../images/arrow01.png) right 50% no-repeat, linear-gradient(to bottom, #fff 0%,#efebe1 100%);
+    background-size: 20px, 100%;
+}
+
+#assaultTime{
+    float: left;
+    width:40%;
+    margin:10px 5%;
+}
+
+.at{
+    float: left;
+    width:40%;
+    margin:10px 5%;
+}
+
+.atTime{
+    -webkit-appearance: none;
+    width:100%;
+    font-size: 20px;
+    border-radius: 5px;
+    margin-top:5px;
+    padding:5px;
+    display: inline-block;
+    background: url(../images/arrow01.png) right 50% no-repeat, linear-gradient(to bottom, #fff 0%,#efebe1 100%);
+    background-size: 20px, 100%;
+}
+
+#submit{
+    width:20%;
+    font-size: 18px;
+    background-image: linear-gradient(-180deg, #1FDCFF 6%, #037D94 54%, #1FDCFF 100%);
+    border: 1px solid #979797;
+    color: #ffffff;
+    margin:20px 40%;
+}
+
+#callTemp{
+    position: absolute;
+    top:20px;
+    right:20px;
+    font-size: 16px;
+    background-image: linear-gradient(-180deg, #1FDCFF 6%, #037D94 54%, #1FDCFF 100%);
+    border: 1px solid #979797;
+    color: #ffffff;
+    height: 40px;
+    width:200px;
+    text-align: center;
+    line-height: 42px;
+}
+.hide{
+    display: none;
+}
+/*------------------ 募集フォーム(モーダル) end ------------------------*/
+
+/* モーダル 背景エリア */
+#modal-bg {
+    display: none;
+    width:100%;
+    height:100%;
+    background-color: rgba(0,0,0,0.5);
+    position:fixed;
+    top:0;
+    left:0;
+    z-index: 1;
+}
+
+
+/*モーダル 詳細画面*/
+#modal-detail{
+    display: none;
+    width:90%;
+    height:90%;
+    margin:0;
+    padding:0;
+    background-color: #f1ebdb;
+    color: #666666;
+    position:fixed;
+    z-index: 2;
+}
+#detailContents{
+    width: 90%;
+    height:90%;
+    margin:0;
+    padding:3%;
+    overflow: hidden;
+    line-height: 1.5;
+    position: relative;
+}
+#detailTeamName{
+    width:100%;
+    font-size: 32px;
+    float:left;
+}
+
+#detailLeft{
+    width:50%;
+    height: 100%;
+    float: left;
+}
+#detailRight{
+    width:40%;
+    height: 80%;
+    float: left;
+    margin:0 5%;
+}
+#detailCont{
+    width:100%;
+    height:90%;
+    float: left;
+    margin:10px;
+}
+.resultCont{
+    width:100%;
+    height:90%;
+    overflow: scroll;
+    padding:1%;
+    border: solid 1px #1D1210;
+
+}
+#detailTags{
+    width:100%;
+    height:30%;
+    margin:20px 0;
+    float:left;
+    overflow: hidden;
+}
+.detailTag{
+    float:left;
+    padding:5px;
+    background-color: #1D1210;
+    color: #fff;
+    margin:5px;
+    border-radius: 5px;
+}
+#tagBox{
+    width:100%;
+    height:100%;
+}
+
+#detailAt{
+    width:100%;
+    height:20%;
+    margin:10px 0;
+    overflow: hidden;
+}
+.resultAt{
+    width:40%;
+    margin:10px 5%;
+    float: left;
+}
+
+#detailContributor{
+    position: absolute;
+    top:5%;
+    right:1%;
+}
+
+
+#detailGameID{
+    width:100%;
+    margin:20px 0;
+    overflow: hidden;
+}
+
+.resultGameID{
+    float:left;
+    width:60%;
+    margin:10px 5%
+}
+
+#detailDate{
+    position: absolute;
+    bottom: 2%;
+    left:3%;
+}
+
+.copyID{
+    float: left;
+    cursor: pointer;
+    padding:5px;
+    margin:5px auto;
+    background-image: linear-gradient(-180deg, #1FDCFF 6%, #037D94 54%, #1FDCFF 100%);
+    border: 1px solid #979797;
+    color: #ffffff;
+}
+.copyID:hover {
+    opacity: 0.8;
+}
+
+.copyID:active{
+    transform: translate3d(0, 3px, 0);
+}
+
+#alertCopy{
+    clear: left;
+    opacity: 0;
+    font-size: 18px;
+    position: fixed;
+    bottom: 3%;
+    left:45%;
+    z-index: 3;
+    padding:1%;
+    transition: opacity 1s ease;
+    text-align: center;
+    background-image: linear-gradient(-180deg, #1FDCFF 6%, #037D94 54%, #1FDCFF 100%);
+    border: 1px solid #979797;
+    color: #ffffff;
+    border-radius: 5px;
+}

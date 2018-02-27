@@ -1,0 +1,70 @@
+body{
+    font-family: BanglaSangamMN-Bold;
+    box-sizing: border-box;
+    background:url("../images/home_main_visual_landscape.jpg") no-repeat;
+    background-size: 100% auto;
+    background-attachment: fixed;
+    height:100%;
+}
+html{
+    height: 100%;
+}
+a{
+    text-decoration: none;
+}
+main{
+    clear: left;
+    z-index: 0;
+}
+main{
+    clear: left;
+    z-index: 0;
+    width:100%;
+    overflow: hidden;
+}
+
+#contents{
+    background: rgba(255,255,255, 0.7);
+    width: 100%;
+    height:88%;
+    overflow: hidden;
+}
+
+#contentsLeft{
+    width:20%;
+    height:100%;
+    background: url("../images/bg.png");
+    float: left;
+}
+#contentsRight{
+    width:80%;
+    height:100%;
+    overflow-y: scroll;
+    float: left;
+}
+/*ユーザーメニュー*/
+.navBtn{
+    width: 80%;
+    height:50px;
+    margin:20px auto;
+    text-align: center;
+    background: url("../images/navBtn.png") no-repeat;
+    background-size: 100% 100%;
+    line-height: 53px;
+    list-style: none;
+    position: relative;
+}
+.navBtn a{
+    position: absolute;
+    display: block;
+    width:100%;
+    height: 100%;
+    top:0;
+    left:0;
+    color:#fff;
+}
+.navBtn a:hover{
+    background: url("../images/navBtnHover.png") no-repeat;
+    background-size: 100% 100%;
+}
+
